@@ -1,6 +1,5 @@
 "use strict";
-const { Model } = require("sequelize");
-module.exports = (sequelize, DataTypes) => {
+const { Model } = (sequelize, DataTypes) => {
   class Ventas_facturadas extends Model {
     static associate(models) {
       Ventas_facturadas.hasMany(models.Ventas_productos, {
